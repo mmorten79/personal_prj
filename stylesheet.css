@@ -1,0 +1,43 @@
+body{
+    font-family: serif;
+    margin: 0;
+}
+
+.backdrop {
+    width: 100vw; /* using vw and vh becausing I'm working with viewport */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(Images/Shot1_w_h20mark.jpg);
+}
+
+.backdrop h1 {
+    font-size: 5em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.backdrop .btn {
+    display: block;
+    width: 200px;
+    padding: 1em;
+    margin-top: 50px; 
+/*This forces the button to be centered. Left and right margins are set to auto taking up equals space from both directions */
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    border: 1px solid dimgray;
+    border-radius: 20px;
+    /* this border-radius could be used to change the shape of the button from a square to a more rounded,soft edged button */ 
+    
+}
+
+.inner-content{
+    
+}

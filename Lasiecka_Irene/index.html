@@ -1,0 +1,99 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Department of Mathematical Sciences, Dr. Irena Lasiecka</title>
+    <link rel="stylesheet" href=".\stylesheet.css" type="text/css" />
+  </head>
+      <body>
+      <div class="Wrapper">
+        <div class="container">
+          <img src=".\Canv.png" alt="Dr.Lasiecka wearing red shirt">
+            <div class="text-block">
+            <p2>Dr. Irena Lasiecka</p2>
+            <p>Dept. Chair of Excellence</p>
+              <p3><a href="mailto:lasiecka@memphis.edu">lasiecka@memphis.edu</a></p3>
+              </div>
+                </div>
+
+
+
+              <div class="navbar">
+                <a class="navbar" onclick="myFunction('Home', this, '#0D3182')"id="defaultOpen">Home</a>
+                <a class="navbar" onclick="myFunction('Studies',this, '#0D3182')">Studies</a>
+                <a class="navbar" onclick="myFunction('Books',this, '#0D3182')">Books</a>
+                <a class="navbar" onclick="myFunction('Publications',this, '#0D3182')">Publications</a>
+
+
+            <div id="Home" class="tabcontent">
+              <h1>2019-CV-Lasiecka,Irena</h1>
+            <iframe src=".\Lasiecka-19.pdf" width="100%" height="790px">
+            </iframe>
+            </div>
+
+            <div id="Studies" class="tabcontent">
+              <h1>Studies</h1>
+              <p>Publications, </p>
+            </div>
+
+            <div id="Books" class="tabcontent">
+              <h1>Books</h1>
+              <p>Irena Lasiecka is the 2019 recipient of the annual Richard E. Bellman Control Heritage Award of the American Automatic<br>
+                  Control Council, the highest award of such professional organization. She received the award on July, 11 in Philadelphia, <br>
+                  at the annual conference of this society, before a gathering of over 1,000 people. </p>
+
+                <p>Citation:<p2> "For Contributions to the boundry control of distributed parameter systems."</p2></p>
+                <li>Differential and Algebraic Riccati Equations with Applications to Boundary/Point Control Problems: Continuous Theory and Approximation Theory (with R. Triggiani), Springer Verlag, Lecture Notes 164, 1991, 160p.</li>
+                <li>Research monograph, Deterministic Control Theory for Infinite Dimensional Systems, vols. I and II (with R. Triggiani) Encyclopedia of Mathematics, Cambridge University Press, 1999.</li>
+                <li>NSF-CMBS Lecture Notes: Mathematical Control Theory of Coupled PDE's, SIAM, 2002.</li>
+              <li>Functional Analytic Methods for Evolution Equations (co-authored with G. Da Prato, <a href="https://en.wikipedia.org/wiki/Alessandra_Lunardi">A. Lunardi</a>, L Weis, R. Schnaubelt), Springer Verlag Lecture Notes in Mathematics, 2004.</li>
+              <li>Tangential Boundary Stabilization of Navier-Stokes Equations (with V. Barbu and R. Triggiani), Memoirs of AMS, vol. 181, 2005.</li>
+              <li>Long-Time Behavior of Second-Order Equations with Nonlinear Damping (with I. Chueshov), Memoirs of AMS, Vol. 195, 2008.</li>
+              <li>Von Karman Evolutions (with I. Chueshov), Monograph Series, Springer Verlag, 2010.</li>
+              <li>SISSA Lecture Notes: Well-Posedness and Long-Time Behavior of Second-Order Evolutions with Critical Exponents, AMS Publishing, to appear.</li>
+              </div>
+
+            <div id="Publications" class="tabcontent">
+              <h1>Editor in Chief:</h1>
+              <div>
+               <p id="linkage" class="emailaddy2"> <a href="http://www.springer.com/mathematics/journal/245" target="_blank" >
+                Applied Mathematics and Optimization [AMO], Publisher Springer Verlag </a>, Publisher Springer Verlag, EIC with Paul Dupuis and Roger Temam, 2013-2015 and with Huyen Pham and Roger Temam 2015-present.<br>
+                  2016 Impact Factor: 1.236.
+              </p>
+              </div>
+          </div>
+
+
+
+
+            <script>
+              function myFunction(cityName,elmnt,color) {
+                var i, tabcontent, navbars;
+
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                  tabcontent[i].style.display = "none";
+
+
+                }
+                navbars = document.getElementsByClassName("navbar");
+                for (i = 0; i < navbars.length; i++) {
+                  navbars[i].style.backgroundColor = "";
+
+                }
+                document.getElementById(cityName).style.display = "block";
+                elmnt.style.backgroundColor = '#0D3182';
+
+              }
+              document.getElementById("defaultOpen").click();
+          </script>
+        </div>
+
+
+        </div>
+
+        </div>
+      </div>
+    </body>
+</html>

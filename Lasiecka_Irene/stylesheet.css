@@ -1,0 +1,217 @@
+@-ms-viewport{
+  width: device-width;
+}
+
+.Wrapper{
+  width: 900px;
+  background:black;
+  margin: 0 auto 0 auto;
+  background-position:left;
+}
+
+
+.Heading1{
+  padding:0;
+  width: 900px;
+  height: 100px;
+  display:block;
+
+ }
+
+
+img{
+  background-repeat: no-repeat;
+  width: 1100px;
+  height: 150px;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+}
+
+/* Bottom Top, right text.  */
+.text-block {
+  position: absolute;
+  top: 20px;
+  right: 30.25px;
+  background-color: white;
+  color: black;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (max-width: 280px) {
+.iframe{
+overflow: auto!important;
+-webkit-overflow-scrolling: touch!important;
+}
+}
+
+
+@media screen and (max-width: 500px) {
+.iframe{
+overflow: auto!important;
+-webkit-overflow-scrolling: touch!important;
+}
+}
+
+/*This area can control the appears of any tab's  boddy */
+
+#Home {
+  background-color:lightgray;
+
+}
+#Studies {
+  background-color:lightgray;
+  border: 3px solid silver;
+}
+#Books {
+  background-color:lightgray;
+  border: 3px solid silver;
+}
+#Publications {
+ background-color:lightgray;
+ border: 3px solid silver;
+}
+
+/*Styling of link and contact info */
+
+p {font-size: 15px;
+  text-align: right-aligned;
+  font-weight: bold;
+  font-style: italic;
+  font-family:Times, serif;}
+
+
+p2 {font-size: 17px;
+  text-align: right-aligned;
+  font-weight: bold;
+  font-style: italic;
+  font-family:Times, serif;}
+
+p3 {font-size: 10px;
+  text-align: right-aligned;
+  font-style: italic;
+  font-family:Times, serif;}
+
+
+
+a:hover.navbar  {
+  background-color: #888C8F;
+  border: 1px solid silver;
+  color: white;
+}
+
+/* Style the current/active link */
+a:active.navbar  {
+  border: 1px solid silver;
+  background-color: #0D3182;
+  color: white;
+
+
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+  @media screen and (max-width: 500px) {
+  .navbar  {
+    float: none;
+    display: none;
+    color:white;
+    width: 100%;
+    height: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+  @media screen and (max-width: 280px) {
+  .navbar  {
+    float: none;
+    display: none;
+    color:white;
+    width: 80%;
+    height: 80%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+
+/*this controls the box around the navigation link buttons */
+.navbar {
+  width: 1100px;
+  height: 850px;
+  background-color: #999;
+  border: 1px solid silver;
+  overflow: hidden;
+  background-position:left;
+}
+
+
+/* Navigation links The length of the navigation buttons, but not the box around it. */
+a.navbar  {
+  float: left;
+  cursor: pointer;
+  text-decoration: none;
+  color:white;
+  font-size: 15px;
+  height: 41.90px;   /*This controls the length of the tabs */
+  width: 24.81%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: black;
+  display: block;
+  height: 1000px;
+  width: 1100px;
+  font-size:15px;
+
+}
+
+/* Each tab has it's own email elements, this is because each page has different and separate content. */
+
+.emailaddy {
+  position: relative;
+  top: -90.10%;
+  left: 129.20%;
+  font-size: 15px; /* 40px/16=2.5em */
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-style: italic;
+  font-family:Times, serif;
+}
+
+.emailaddy2 {
+  position: relative;
+  top: 20.89%;
+  left: 50.00%;
+  font-size: 15px; /* 40px/16=2.5em */
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-style: italic;
+  font-family:Times, serif;
+}
+
+a.emailaddy2  {
+  font-weight: bold;
+  font-style: italic;
+  font-family:Times, serif;
+}
+
+a:hover.emailaddy2  {
+  background-color: none;
+  color: red;
+}
+a.active.emailaddy2  {
+  background-color: none;
+  color: white;
+  display: block;
+
+}
+
+.Footer{
+  float:top;
+  height:50px;
+  background:black;
+}

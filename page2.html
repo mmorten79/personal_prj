@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href=".\CSS\slidersheet.css" type="text/css" media="screen" />
+    <title>Artist - Jason Arnold</title>
+    </head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 16</div>
+  <img src="./CSS/Images/update/Photo_1.jpg" style="width:100%">
+  <div class="text">By Jason Arnold</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 16</div>
+  <img src="./CSS/Images/update/Photo_2.jpg" style="width:100%">
+  <div class="text">By Jason Arnold</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 16</div>
+  <img src="./CSS/Images/update/Photo_3.jpg" style="width:100%">
+  <div class="text">By Jason Arnold</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 16</div>
+  <img src="./CSS/Images/update/Photo_4.jpg" style="width:100%">
+  <div class="text">By Jason Arnold</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 16</div>
+  <img src="./CSS/Images/update/Photo_5.jpg" style="width:100%">
+  <div class="text">By Jason Arnold</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 16</div>
+  <img src="./CSS/Images/update/Photo_6.jpg" style="width:100%">
+  <div class="text">By Jason Arnold</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">7 / 16</div>
+  <img src="./CSS/Images/update/Photo_7.jpg" style="width:100%">
+  <div class="text">By Jason Arnold</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">8 / 16</div>
+  <img src="./CSS/Images/update/Photo_8.jpg" style="width:100%">
+  <div class="text">By Jason Arnold</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">9 / 16</div>
+  <img src="./CSS/Images/update/Photo_9.jpg" style="width:100%">
+  <div class="text">By Jason Arnold</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">10 / 16</div>
+  <img src="./CSS/Images/update/Photo_10.jpg" style="width:100%">
+  <div class="text">By Jason Arnold</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">11 / 16</div>
+  <img src="./CSS/Images/update/Photo_11.jpg" style="width:100%">
+  <div class="text">By Jason Arnold</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">12 / 16</div>
+  <img src="./CSS/Images/update/Photo_12.jpg" style="width:100%">
+  <div class="text">By Jason Arnold</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">13 / 16</div>
+  <img src="./CSS/Images/update/Photo_13.jpg" style="width:100%">
+  <div class="text">By Jason Arnold</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">14 / 16</div>
+  <img src="./CSS/Images/update/Photo_14.jpg" style="width:100%">
+  <div class="text">By Jason Arnold</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">15 / 16</div>
+  <img src="./CSS/Images/update/Photo_15.jpg" style="width:100%">
+  <div class="text">By Jason Arnold</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">16 / 16</div>
+  <img src="./CSS/Images/update/Photo_16.jpg" style="width:100%">
+  <div class="text">By Jason Arnold</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+    
+<button onclick="myFunction()">BACK</button>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+  <span class="dot" onclick="currentSlide(11)"></span>
+  <span class="dot" onclick="currentSlide(12)"></span>
+  <span class="dot" onclick="currentSlide(13)"></span>
+  <span class="dot" onclick="currentSlide(14)"></span>
+  <span class="dot" onclick="currentSlide(15)"></span>
+  <span class="dot" onclick="currentSlide(16)"></span>
+
+</div>
+
+    
+    
+    
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function myFunction() {
+ location.replace("./index.html")
+}
+    
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
