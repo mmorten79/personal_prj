@@ -29,6 +29,72 @@ html.is-animating .transistion-fade {
 }
 
 
+a:hover.navbar  {
+  background-color: #888C8F;
+  border: 1px solid silver;
+  color: white;
+}
+
+/* Style the current/active link */
+a:active.navbar  {
+  border: 1px solid silver;
+  background-color: #0D3182;
+  color: white;
+
+
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+  @media screen and (max-width: 500px) {
+  .navbar  {
+    float: none;
+    display: none;
+    color:white;
+    width: 100%;
+    height: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+  @media screen and (max-width: 280px) {
+  .navbar  {
+    float: none;
+    display: none;
+    color:white;
+    width: 80%;
+    height: 80%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+
+/*this controls the box around the navigation link buttons */
+.navbar {
+  width: 100%;
+  height: 30px;
+  border: 1px solid black;
+  overflow: hidden;
+  opacity: 100%;
+  background-position:left;
+}
+
+
+/* Navigation links The length of the navigation buttons, but not the box around it. */
+a.navbar  {
+  float: left;
+  cursor: pointer;
+  text-decoration: none;
+  color:white;
+  transition: all 06s ease;
+  font-size: 15px;
+  height: 50.90px;   /*This controls the length of the tabs */
+  width: 24.81%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+
+
+
 
 
 /*8888888888888888888888888888888888888888888888888888888888888**/
@@ -38,7 +104,7 @@ html.is-animating .transistion-fade {
     align-items: center;
     text-align: center;
     background-image: url(../CSS/Images/Shot1_w_h20mark.jpg);
-    height: 100%;
+    height: 95%;
     width:100vw;
     background-size: cover;
     position: relative;
@@ -90,7 +156,7 @@ html.is-animating .transistion-fade {
   left: 0;
   overflow: hidden;
   list-style: none;
-  transform: translateX(-50) translateY(-50)
+  transform: translateX(-50) translateY(-50);
   transition: all 06s ease;
 }
 
