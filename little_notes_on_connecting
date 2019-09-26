@@ -1,0 +1,6 @@
+Here is what's needed to get my files over to the server Stephen has
+scp -r update mike@104.225.218.210:/home/mike/public_html/CSS/Images/
+
+ssh mikem@104.225.218.210
+
+
